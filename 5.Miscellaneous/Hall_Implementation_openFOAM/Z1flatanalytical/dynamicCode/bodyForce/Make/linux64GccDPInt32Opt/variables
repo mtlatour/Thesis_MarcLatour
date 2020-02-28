@@ -1,0 +1,1 @@
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libbodyForce_c4d8b43b18a37e1160aa3b34285a1fee1b55d330

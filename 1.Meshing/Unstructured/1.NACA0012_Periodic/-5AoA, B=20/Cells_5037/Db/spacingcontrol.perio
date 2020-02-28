@@ -1,0 +1,16 @@
+    thk_bl      n BC      GEOM        CV
+    1.e-03         5       axl         0
+  
+          PITCH             xc             yc
+     0.314158               1.0            1.0
+
+ 1 INFLOW    h_min     h_max   Nd RdCRv
+              1.e-3      0.03         5.
+ 3 OUTFLOW   h min     h max   Nd RdCRv
+              1.e-3      0.03         5.
+ 4 PERIO     h min     h max   Nd RdCRv
+              1.e-3      0.03         5.
+ 5 PERIO     h min     h max   Nd RdCRv
+	      1.e-3      0.03         5.
+ 8 WALL      h min     h max   Nd RdCRv
+	      1.e-3      0.03         5.

@@ -1,0 +1,31 @@
+main_stlreader.m - Extracts Airfoils from Pacifica blade
+write_bladegen_files.m - outputs files in .curve format
+
+unwrap.m - Converts 3D airfoil to 2D
+wrap.m   - Converts 2D airfoil to 3D
+
+max_distance_callipers - Find two furthest points on a closed curve
+get_LE_TE - By Euclidean distance method
+
+set_sequence_ray - Order points in a circular sequence for a closed curve
+correct_sequence - For concave parts of the graph, reorders the incorrect sequence
+
+smooth_curve - remove uneven LE/TE/inward lying points
+
+get_accurate_camber - get camber line of a 2D airfoil
+get_approx_camber - mean camber estimation of a 2D airfoil
+
+
+
+EXTERNAL PROGRAMS USED:
+
+SurfaceIntersection - Finds intersection curve between two surfaces
+geom2d - for max_distance_callipers
+InterX - for get_accurate_camber
+
+
+
+To read Pacifica blade:
+
+1. Run main_stlreader.m to extract the airfoil data
+2. Run write_bladegen_files.m to create the curve files

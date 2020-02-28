@@ -1,0 +1,113 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6-6257b17a4cf8
+Exec   : simpleFoam
+Date   : Mar 31 2019
+Time   : 17:45:40
+Host   : "palak-OptiPlex-9020"
+PID    : 11455
+I/O    : uncollated
+Case   : /home/palak/OpenFOAM/palak-6/run/Z3curvedanalytical
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: Convergence criteria found
+        p: tolerance 0.001
+        U: tolerance 0.0001
+        "(k|epsilon)": tolerance 0.0001
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+No MRF models present
+
+Creating finite volume options from "constant/fvOptions"
+
+Selecting finite volume options model type vectorCodedSource
+    Source: momentumSource
+    - selecting all cells
+    - selected 4000 cell(s) with volume 1
+
+Starting time loop
+
+Time = 1000
+
+Using dynamicCode for fvOption:: bodyForce at line 25 in "/home/palak/OpenFOAM/palak-6/run/Z3curvedanalytical/constant/fvOptions.momentumSource.vectorCodedSourceCoeffs"
+Selecting finite volume options model type bodyForce
+    Source: bodyForce
+    - selecting all cells
+    - selected 4000 cell(s) with volume 1
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 4.78329e-06, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 1, Final residual = 4.78329e-06, No Iterations 1
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.0806441, No Iterations 3
+time step continuity errors : sum local = 2758.09, global = -111.85, cumulative = -111.85
+**codeCorrect**
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+Time = 2000
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.154937, Final residual = 0.00551365, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.148387, Final residual = 0.00549178, No Iterations 1
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 0.0826326, Final residual = 0.0047943, No Iterations 3
+time step continuity errors : sum local = 1434.7, global = -42.4468, cumulative = -154.296
+**codeCorrect**
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+Time = 3000
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.701292, Final residual = 0.0333724, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0846048, Final residual = 0.00371485, No Iterations 1
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 0.0446706, Final residual = 0.00229632, No Iterations 3
+time step continuity errors : sum local = 1163.59, global = 12.2289, cumulative = -142.068
+**codeCorrect**
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+Time = 4000
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.41771, Final residual = 0.0210795, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0564533, Final residual = 0.0025385, No Iterations 1
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 0.0725718, Final residual = 0.00564332, No Iterations 3
+time step continuity errors : sum local = 1947.47, global = 51.0015, cumulative = -91.066
+**codeCorrect**
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+Time = 5000
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.253659, Final residual = 0.012512, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0424992, Final residual = 0.00196574, No Iterations 1
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 0.209609, Final residual = 0.0128385, No Iterations 3
+time step continuity errors : sum local = 1134.46, global = 38.3816, cumulative = -52.6844
+**codeCorrect**
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+End
+

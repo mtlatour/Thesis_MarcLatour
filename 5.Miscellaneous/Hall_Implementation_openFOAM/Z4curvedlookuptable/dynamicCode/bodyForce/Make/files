@@ -1,0 +1,6 @@
+/* dynamicCode:
+ * SHA1 = 90e2d38f924a8f1f59cf06935fc5b1741620a6f6
+ */
+codedFvOptionTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libbodyForce_90e2d38f924a8f1f59cf06935fc5b1741620a6f6

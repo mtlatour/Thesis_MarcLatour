@@ -1,0 +1,5 @@
+# Setup for the runs in this folder
+R = 1
+Rotation = 0
+Compressibility correction used: YES
+Mesh: Structured, 80x40 (z1,z3) and 80x30 (z2)

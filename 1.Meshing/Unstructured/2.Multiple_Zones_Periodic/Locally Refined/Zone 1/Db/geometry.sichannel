@@ -1,0 +1,30 @@
+  Number of surfaces 
+                  4
+ EDGE1_A
+                ' S '
+                 dim                  np
+                   2                  2  
+                   x                   y
+                 -2.0                -1.25
+                 0.0                 -1.25
+ EDGE2_A
+                ' S '
+                 dim                  np
+                   2                  2  
+                   x                   y
+                 0.0                 -1.25
+                 0.0                  1.25
+ EDGE3_A
+                ' S '
+                 dim                  np
+                   2                  2  
+                   x                   y
+                 0.0                 1.25
+                 -2.0                 1.25
+ EDGE4_A
+                ' S '
+                 dim                  np
+                   2                  2  
+                   x                   y
+                 -2.0                 1.25
+                 -2.0                 -1.25

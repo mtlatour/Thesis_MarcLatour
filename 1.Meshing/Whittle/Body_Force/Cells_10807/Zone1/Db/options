@@ -1,0 +1,20 @@
+fmt      name
+'grd'   'whittle_bf'
+optimization
+1
+max element deformation
+1.0
+layer of the background grid
+6
+Periodic geometry       tol perio
+.true. 	 	            1e-6
+Scaling for SU2 file
+1.0
+number of boundary layers	BL thickness
+0				1e-3
+Graph for hybrid mesh construction
+.false.
+Kind of radial basis function (1-11)
+11
+Support radius for compact basis functins
+0.5

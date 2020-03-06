@@ -1,5 +1,5 @@
 # Thesis_MarcLatour
-This repository contains all the relevant files used throughout this thesis and is split into similar chapters as in the report.
+This repository contains all the relevant files used throughout this thesis.
 
 ## Prerequisites for running everything on this repo
 - Perform an AD build of SU2_feature_turbo_bodyforce. This includes Hall's body force in the direct and adjoint solvers and will allow all simulations to be run.

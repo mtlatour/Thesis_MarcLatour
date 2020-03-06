@@ -2,7 +2,7 @@
 This repository contains all the relevant files used throughout this thesis.
 
 ## Prerequisites for running everything on this repo
-- Perform an AD build of SU2_feature_turbo_bodyforce. This includes Hall's body force in the direct and adjoint solvers and will allow all simulations to be run.
+- Perform an AD build of SU2_feature_turbo_bodyforce from ``https://github.com/su2code/SU2/tree/feature_turbo_bodyforce`` . This includes Hall's body force in the direct and adjoint solvers and will allow all simulations to be run.
 - Download and compile UMG2 from the turbomachinery BitBucket. Ask Matteo Pini for access if you do not have so yet.
 
 ## Overview of contents of this repo

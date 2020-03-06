@@ -1,0 +1,105 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5.x-197d9d3bf20a
+Exec   : simpleFoam
+Date   : Jan 29 2019
+Time   : 23:20:13
+Host   : "palak"
+PID    : 2517
+I/O    : uncollated
+Case   : /home/palak/OpenFOAM/palak-5.0/run/Z1flatanalytical
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 81
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.001
+    field U	 tolerance 0.0001
+    field "(k|epsilon)"	 tolerance 0.0001
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+No MRF models present
+
+Creating finite volume options from "constant/fvOptions"
+
+Selecting finite volume options model type vectorCodedSource
+    Source: momentumSource
+    - selecting all cells
+    - selected 800 cell(s) with volume 0.2
+
+Starting time loop
+
+Time = 82
+
+Using dynamicCode for fvOption:: bodyForce at line 25 in "/home/palak/OpenFOAM/palak-5.0/run/Z1flatanalytical/constant/fvOptions.momentumSource.vectorCodedSourceCoeffs"
+Selecting finite volume options model type bodyForce
+    Source: bodyForce
+    - selecting all cells
+    - selected 800 cell(s) with volume 0.2
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.00195193, Final residual = 0.000129293, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 3.11573e-06, Final residual = 4.93259e-08, No Iterations 2
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 0.000296394, Final residual = 2.66362e-05, No Iterations 1
+time step continuity errors : sum local = 3.049e-06, global = -5.96033e-07, cumulative = -5.96033e-07
+**codeCorrect**
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+Time = 83
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.000504888, Final residual = 9.59485e-06, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 1.22542e-06, Final residual = 2.65403e-08, No Iterations 2
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 4.54024e-05, Final residual = 3.25935e-06, No Iterations 2
+time step continuity errors : sum local = 3.7311e-07, global = -1.18213e-07, cumulative = -7.14246e-07
+**codeCorrect**
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+Time = 84
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 0.000232446, Final residual = 7.69902e-06, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 2.44602e-07, Final residual = 7.98316e-09, No Iterations 2
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 0.000111437, Final residual = 2.73625e-06, No Iterations 2
+time step continuity errors : sum local = 3.13284e-07, global = -4.88049e-08, cumulative = -7.63051e-07
+**codeCorrect**
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+Time = 85
+
+**codeSetValue**
+smoothSolver:  Solving for Ux, Initial residual = 9.83676e-05, Final residual = 4.33597e-06, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 2.26082e-07, Final residual = 1.12366e-08, No Iterations 2
+**codeCorrect**
+GAMG:  Solving for p, Initial residual = 9.47012e-05, Final residual = 3.56922e-06, No Iterations 2
+time step continuity errors : sum local = 4.08664e-07, global = 8.51929e-08, cumulative = -6.77858e-07
+**codeCorrect**
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+
+SIMPLE solution converged in 85 iterations
+
+End
+

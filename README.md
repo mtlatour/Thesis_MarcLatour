@@ -1,5 +1,5 @@
 # Thesis_MarcLatour
-This repository contains all the relevant files used throughout this thesis.
+This repository contains all the relevant files used throughout the thesis titled "Body force modeling of axial turbomachinery for analysis and design optimization" by M.T. Latour. For clarification, the reader can contact me at marclatour94@gmail.com.
 
 ## Prerequisites for running everything on this repo
 - Perform an AD build of SU2_feature_turbo_bodyforce from ``https://github.com/su2code/SU2/tree/feature_turbo_bodyforce`` . This includes Hall's body force in the direct and adjoint solvers and will allow all simulations to be run.
